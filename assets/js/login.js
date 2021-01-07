@@ -99,6 +99,8 @@ $(function(){
                 // 登录失败
                 return layer.msg("登录失败");
               }
+
+              localStorage.setItem("token", res.token);
               layer.msg("登录成功, 即将跳转到首页", function () {
                 // 弹出框关闭了才会执行该函数
       
